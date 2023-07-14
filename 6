@@ -1,0 +1,1133 @@
+# classes.dex
+
+.class public Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;
+.super Ljava/lang/Object;
+.source "VipGradeManageHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper$InnerClass;
+    }
+.end annotation
+
+
+# static fields
+.field public static final POWER_BY1:F = 2.0f
+
+.field public static final POWER_BY2:F = 3.0f
+
+.field public static final POWER_BY3:F = 4.0f
+
+.field public static final POWER_BY4:F = 5.0f
+
+.field public static final POWER_CHATGPT:F = 320.0f
+
+.field public static final POWER_CJ2C1:F = 140.0f
+
+.field public static final POWER_CJJH:F = 90.0f
+
+.field public static final POWER_CJJHGJ:F = 100.0f
+
+.field public static final POWER_DJ_DLT:F = 210.0f
+
+.field public static final POWER_DJ_KL8:F = 220.0f
+
+.field public static final POWER_DJ_QXC:F = 230.0f
+
+.field public static final POWER_DJ_SSQ:F = 200.0f
+
+.field public static final POWER_DSTD:F = 170.0f
+
+.field public static final POWER_HZJJ:F = 120.0f
+
+.field public static final POWER_JHRD:F = 260.0f
+
+.field public static final POWER_JJJH:F = 80.0f
+
+.field public static final POWER_JXYJ:F = 70.0f
+
+.field public static final POWER_QT1:F = 1.0f
+
+.field public static final POWER_QT2:F = 1.6f
+
+.field public static final POWER_RYSX:F = 290.0f
+
+.field public static final POWER_SPF:F = 130.0f
+
+.field public static final POWER_WQYZ:F = 110.0f
+
+.field public static final POWER_YK:F = 0.0f
+
+.field public static final POWER_ZNTJ:F = 280.0f
+
+.field public static final vipArray:[Ljava/lang/Float;
+
+.field public static final vipNameArray:[Ljava/lang/String;
+
+
+# instance fields
+.field private allVipFunctionList:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private purchasedVipFunctionList:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private vipType:F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 9
+
+    const/4 v0, 0x6
+
+    new-array v0, v0, [Ljava/lang/Float;
+
+    const/high16 v1, 0x3f800000  # 1.0f
+
+    .line 52
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    const v1, 0x3fcccccd  # 1.6f
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    const/high16 v1, 0x40000000  # 2.0f
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    const/high16 v1, 0x40400000  # 3.0f
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    const/high16 v1, 0x40800000  # 4.0f
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    const/high16 v1, 0x40a00000  # 5.0f
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
+
+    sput-object v0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipArray:[Ljava/lang/Float;
+
+    const-string v3, "闈掗摐浼氬憳"
+
+    const-string v4, "闈掗摐浼氬憳II"
+
+    const-string v5, "鐧介摱浼氬憳I"
+
+    const-string v6, "鐧介摱浼氬憳II"
+
+    const-string v7, "鐧介摱浼氬憳III"
+
+    const-string v8, "鐧介摱浼氬憳VI"
+
+    .line 54
+    filled-new-array/range {v3 .. v8}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipNameArray:[Ljava/lang/String;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 2
+
+    .line 72
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 70
+    iput v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipType:F
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper$1;)V
+    .registers 2
+
+    .line 20
+    invoke-direct {p0}, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;-><init>()V
+
+    return-void
+.end method
+
+.method public static getInstance()Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;
+    .registers 1
+
+    .line 82
+    sget-object v0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper$InnerClass;->instance:Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public UpdateVipFunctionDataList(Ljava/util/List;)Ljava/util/List;
+    .registers 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/xckj/planhome/ui/planHall/bean/VipFunctionDataBean;",
+            ">;)",
+            "Ljava/util/List<",
+            "Lcom/xckj/planhome/ui/planHall/bean/VipFunctionDataBean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 91
+    :try_start_0
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    if-eqz v0, :cond_4f
+
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_4f
+
+    .line 92
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_10
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4f
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/xckj/planhome/ui/planHall/bean/VipFunctionDataBean;
+
+    const-wide/16 v2, 0x0
+
+    .line 93
+    invoke-virtual {v1, v2, v3}, Lcom/xckj/planhome/ui/planHall/bean/VipFunctionDataBean;->setEndTime(J)V
+
+    .line 94
+    iget-object v2, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_27
+    :goto_27
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_10
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 95
+    invoke-virtual {v1}, Lcom/xckj/planhome/ui/planHall/bean/VipFunctionDataBean;->getPower()F
+
+    move-result v4
+
+    invoke-virtual {v3}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v5
+
+    cmpl-float v4, v4, v5
+
+    if-nez v4, :cond_27
+
+    .line 96
+    invoke-virtual {v3}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getEndtime()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v3
+
+    invoke-virtual {v1, v3, v4}, Lcom/xckj/planhome/ui/planHall/bean/VipFunctionDataBean;->setEndTime(J)V
+    :try_end_4a
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_4a} :catch_4b
+
+    goto :goto_27
+
+    :catch_4b
+    move-exception v0
+
+    .line 102
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_4f
+    return-object p1
+.end method
+
+.method public getFunctionEndTime(F)Ljava/lang/String;
+    .registers 6
+
+    .line 315
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    const-string v1, "0"
+
+    if-eqz v0, :cond_2b
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_2b
+
+    .line 316
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_12
+    :goto_12
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2b
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 317
+    invoke-virtual {v2}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v3
+
+    cmpl-float v3, p1, v3
+
+    if-nez v3, :cond_12
+
+    .line 318
+    invoke-virtual {v2}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getEndtime()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_12
+
+    :cond_2b
+    return-object v1
+.end method
+
+.method public getTargetVipForFunction(F)F
+    .registers 6
+
+    .line 287
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->allVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    const/high16 v1, 0x40000000  # 2.0f
+
+    :cond_8
+    :goto_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_29
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;
+
+    .line 288
+    invoke-virtual {v2}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;->getGnid()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v3
+
+    cmpl-float v3, p1, v3
+
+    if-nez v3, :cond_8
+
+    .line 289
+    invoke-virtual {v2}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;->getVip()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v1
+
+    goto :goto_8
+
+    :cond_29
+    return v1
+.end method
+
+.method public getVipName(F)Ljava/lang/String;
+    .registers 6
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 300
+    :goto_2
+    sget-object v2, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipArray:[Ljava/lang/Float;
+
+    array-length v3, v2
+
+    if-ge v1, v3, :cond_16
+
+    .line 301
+    aget-object v2, v2, v1
+
+    invoke-virtual {v2}, Ljava/lang/Float;->floatValue()F
+
+    move-result v2
+
+    cmpl-float v2, v2, p1
+
+    if-nez v2, :cond_13
+
+    move v0, v1
+
+    goto :goto_16
+
+    :cond_13
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_2
+
+    .line 307
+    :cond_16
+    :goto_16
+    sget-object p1, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipNameArray:[Ljava/lang/String;
+
+    aget-object p1, p1, v0
+
+    return-object p1
+.end method
+
+.method public getVipNameForFunction(F)Ljava/lang/String;
+    .registers 2
+
+    .line 278
+    invoke-virtual {p0, p1}, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->getTargetVipForFunction(F)F
+
+    move-result p1
+
+    .line 279
+    invoke-virtual {p0, p1}, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->getVipName(F)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getVipPowerType(F)I
+    .registers 3
+
+    const/4 v0, 0x0
+
+    .line 191
+    invoke-virtual {p0, p1, v0}, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->getVipPowerType(FZ)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public getVipPowerType(FZ)I
+    .registers 13
+
+    .line 206
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->allVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_6
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_33
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;
+
+    .line 207
+    invoke-virtual {v1}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;->getGnid()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v4
+
+    cmpl-float v4, v4, p1
+
+    if-nez v4, :cond_6
+
+    .line 209
+    invoke-virtual {v1}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;->getVip()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v0
+
+    .line 210
+    iget v1, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipType:F
+
+    cmpl-float v1, v1, v0
+
+    if-ltz v1, :cond_30
+
+    const/4 v1, 0x1
+
+    goto :goto_31
+
+    :cond_30
+    const/4 v1, 0x0
+
+    :goto_31
+    move v7, v0
+
+    goto :goto_38
+
+    :cond_33
+    const/high16 v0, 0x3f800000  # 1.0f
+
+    const/4 v1, 0x0
+
+    const/high16 v7, 0x3f800000  # 1.0f
+
+    .line 216
+    :goto_38
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_3e
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_54
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 217
+    invoke-virtual {v4}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v4
+
+    cmpl-float v4, v4, p1
+
+    if-nez v4, :cond_3e
+
+    const/4 v0, 0x1
+
+    goto :goto_55
+
+    :cond_54
+    const/4 v0, 0x0
+
+    :goto_55
+    if-eqz v1, :cond_5b
+
+    if-eqz v0, :cond_5b
+
+    const/4 v2, 0x3
+
+    goto :goto_63
+
+    :cond_5b
+    if-eqz v0, :cond_5f
+
+    const/4 v2, 0x2
+
+    goto :goto_63
+
+    :cond_5f
+    if-eqz v1, :cond_62
+
+    goto :goto_63
+
+    :cond_62
+    const/4 v2, 0x0
+
+    :goto_63
+    if-nez v2, :cond_77
+
+    if-eqz p2, :cond_77
+
+    .line 233
+    invoke-static {}, Lcom/blankj/utilcode/util/ActivityUtils;->getTopActivity()Landroid/app/Activity;
+
+    move-result-object v5
+
+    .line 234
+    new-instance p2, Lcom/xckj/planhome/widget/UserVipTipDialog;
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    move-object v4, p2
+
+    move v6, p1
+
+    invoke-direct/range {v4 .. v9}, Lcom/xckj/planhome/widget/UserVipTipDialog;-><init>(Landroid/app/Activity;FFZZ)V
+
+    .line 235
+    invoke-virtual {p2}, Lcom/xckj/planhome/widget/UserVipTipDialog;->show()V
+
+    :cond_77
+    return v2
+.end method
+
+.method public isVipPowerEnough(F)Z
+    .registers 3
+
+    const/4 v0, 0x0
+
+    .line 183
+    invoke-virtual {p0, p1, v0}, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->getVipPowerType(FZ)I
+
+    move-result p1
+
+    if-lez p1, :cond_8
+
+    const/4 v0, 0x1
+
+    :cond_8
+    return v0
+.end method
+
+.method public isVipPowerEnoughWithDialog(F)Z
+    .registers 3
+
+    const/4 v0, 0x1
+
+    .line 176
+    invoke-virtual {p0, p1, v0}, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->getVipPowerType(FZ)I
+
+    move-result p1
+
+    if-lez p1, :cond_8
+
+    goto :goto_9
+
+    :cond_8
+    const/4 v0, 0x0
+
+    :goto_9
+    return v0
+.end method
+
+.method public setVipGradeFunctionData(Ljava/util/List;Ljava/util/List;F)V
+    .registers 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;",
+            ">;",
+            "Ljava/util/List<",
+            "Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;",
+            ">;F)V"
+        }
+    .end annotation
+
+    .line 113
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 116
+    iget-object v1, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_aa
+
+    if-eqz p2, :cond_aa
+
+    .line 119
+    invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_11
+    :goto_11
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_56
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 121
+    invoke-virtual {v4}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v5
+
+    .line 122
+    iget-object v6, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v6
+
+    const/4 v7, 0x1
+
+    :cond_28
+    :goto_28
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_4c
+
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 123
+    invoke-virtual {v8}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v9
+
+    cmpl-float v9, v5, v9
+
+    if-nez v9, :cond_28
+
+    .line 124
+    invoke-virtual {v4}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getEndtime()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getEndtime()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v9, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_28
+
+    const/4 v7, 0x0
+
+    goto :goto_28
+
+    :cond_4c
+    if-eqz v7, :cond_11
+
+    .line 130
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v4
+
+    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_11
+
+    .line 134
+    :cond_56
+    iget-object v1, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_5c
+    :goto_5c
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_aa
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 136
+    invoke-virtual {v4}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v5
+
+    .line 137
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v6
+
+    invoke-interface {v0, v6}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_77
+
+    goto :goto_5c
+
+    .line 138
+    :cond_77
+    invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v6
+
+    const/4 v7, 0x1
+
+    :cond_7c
+    :goto_7c
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_a0
+
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 139
+    invoke-virtual {v8}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v9
+
+    cmpl-float v9, v5, v9
+
+    if-nez v9, :cond_7c
+
+    .line 140
+    invoke-virtual {v4}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getEndtime()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getEndtime()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v9, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_7c
+
+    const/4 v7, 0x0
+
+    goto :goto_7c
+
+    :cond_a0
+    if-eqz v7, :cond_5c
+
+    .line 146
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v4
+
+    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_5c
+
+    .line 154
+    :cond_aa
+    iget v1, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipType:F
+
+    cmpl-float v1, v1, p3
+
+    if-eqz v1, :cond_b1
+
+    goto :goto_b2
+
+    :cond_b1
+    const/4 v2, 0x0
+
+    .line 156
+    :goto_b2
+    iput-object p1, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->allVipFunctionList:Ljava/util/List;
+
+    .line 157
+    iput-object p2, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    .line 158
+    iput p3, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipType:F
+
+    .line 161
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    if-lez p1, :cond_ca
+
+    .line 162
+    invoke-static {}, Lorg/greenrobot/eventbus/EventBus;->getDefault()Lorg/greenrobot/eventbus/EventBus;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/xckj/planhome/ui/accountCenter/eventBean/VipFuctionChangeEvent;
+
+    invoke-direct {p2, v0}, Lcom/xckj/planhome/ui/accountCenter/eventBean/VipFuctionChangeEvent;-><init>(Ljava/util/List;)V
+
+    invoke-virtual {p1, p2}, Lorg/greenrobot/eventbus/EventBus;->post(Ljava/lang/Object;)V
+
+    :cond_ca
+    if-eqz v2, :cond_d8
+
+    .line 167
+    invoke-static {}, Lorg/greenrobot/eventbus/EventBus;->getDefault()Lorg/greenrobot/eventbus/EventBus;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/xckj/planhome/ui/accountCenter/eventBean/VipInfoChangeEvent;
+
+    invoke-direct {p2, p3}, Lcom/xckj/planhome/ui/accountCenter/eventBean/VipInfoChangeEvent;-><init>(F)V
+
+    invoke-virtual {p1, p2}, Lorg/greenrobot/eventbus/EventBus;->post(Ljava/lang/Object;)V
+
+    :cond_d8
+    return-void
+.end method
+
+.method public vipPowerNotEnough(F)V
+    .registers 12
+
+    .line 248
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->allVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_6
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_34
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;
+
+    .line 249
+    invoke-virtual {v1}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;->getGnid()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v4
+
+    cmpl-float v4, v4, p1
+
+    if-nez v4, :cond_6
+
+    .line 251
+    invoke-virtual {v1}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnStatusBean;->getVip()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v0
+
+    .line 252
+    iget v1, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->vipType:F
+
+    cmpl-float v1, v1, v0
+
+    if-ltz v1, :cond_30
+
+    const/4 v1, 0x1
+
+    goto :goto_31
+
+    :cond_30
+    const/4 v1, 0x0
+
+    :goto_31
+    move v7, v0
+
+    move v8, v1
+
+    goto :goto_39
+
+    :cond_34
+    const/high16 v0, 0x3f800000  # 1.0f
+
+    const/high16 v7, 0x3f800000  # 1.0f
+
+    const/4 v8, 0x0
+
+    .line 258
+    :goto_39
+    iget-object v0, p0, Lcom/xckj/planhome/ui/accountCenter/helper/VipGradeManageHelper;->purchasedVipFunctionList:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_3f
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_55
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;
+
+    .line 259
+    invoke-virtual {v1}, Lcom/xckj/planhome/ui/accountCenter/bean/UserInfoBean$DataBean$GnHyBean;->getPower()F
+
+    move-result v1
+
+    cmpl-float v1, v1, p1
+
+    if-nez v1, :cond_3f
+
+    const/4 v9, 0x1
+
+    goto :goto_56
+
+    :cond_55
+    const/4 v9, 0x0
+
+    .line 266
+    :goto_56
+    invoke-static {}, Lcom/blankj/utilcode/util/ActivityUtils;->getTopActivity()Landroid/app/Activity;
+
+    move-result-object v5
+
+    .line 267
+    new-instance v0, Lcom/xckj/planhome/widget/UserVipTipDialog;
+
+    move-object v4, v0
+
+    move v6, p1
+
+    invoke-direct/range {v4 .. v9}, Lcom/xckj/planhome/widget/UserVipTipDialog;-><init>(Landroid/app/Activity;FFZZ)V
+
+    .line 268
+    invoke-virtual {v0}, Lcom/xckj/planhome/widget/UserVipTipDialog;->show()V
+
+    return-void
+.end method
+
